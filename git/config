@@ -1,0 +1,22 @@
+[alias]
+	cm = "commit -m"
+	co = "checkout"
+	d = "diff"
+	gl = "config --global -l"
+	ig = "!echo \"$@\" >> .git/info/exclude"
+	last = "log -1 HEAD --stat"
+	ll = "log --oneline"
+	rt = "!cd $(git rev-parse --show-toplevel)"
+	rv = "remote -v"
+	se = "!git rev-list --all | xargs git grep -F"
+	st = "status -sb"
+
+[core]
+	editor = "nvim"
+
+[init]
+	defaultBranch = "main"
+
+[user]
+	email = "hugh2024@shanghaitech.edu.cn"
+	name = "Guanghui Hu"

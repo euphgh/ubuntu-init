@@ -7,6 +7,11 @@ ZDOTDIR ?= ~/.config/zsh
 
 install-zsh:
 	mkdir -p $(ZDOTDIR)
-	cp -r zsh/config/zsh ~/.config
-	cp -r zsh/config/.zshenv ~/.config
+	cp -r zsh/config/zsh ~/.config/
+	cp -r zsh/.zshenv ~/
 	git clone --depth=1 https://github.com/mattmc3/antidote.git $(ZDOTDIR)/.antidote
+
+install-git:
+	mkdir -p ~/.config
+	cp -r git ~/.config/
+

@@ -1,0 +1,5 @@
+*~
+*.swp
+.direnv/
+.cache/
+.vscode/
